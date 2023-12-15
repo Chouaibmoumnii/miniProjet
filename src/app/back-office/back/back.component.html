@@ -1,0 +1,152 @@
+<script>
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
+  </script>
+
+
+
+
+
+  <!-- ====================================
+  ——— WRAPPER
+  ===================================== -->
+  <div class="wrapper">
+
+
+      <!-- ====================================
+        ——— LEFT SIDEBAR WITH OUT FOOTER
+      ===================================== -->
+      <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+        <div id="sidebar" class="sidebar sidebar-with-footer">
+
+          <div class="sidebar-left" data-simplebar style="height: 100%;">
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+
+                <li class="section-title">
+                  Les gestions
+                </li>
+
+
+
+
+
+                <li>
+                  <a class="sidenav-item-link" routerLink="universite">
+                    <i class="mdi mdi-home-variant"></i>
+                    <span class="nav-text">Universite</span>
+                  </a>
+                </li>
+
+
+
+
+
+                <li
+                 >
+                  <a class="sidenav-item-link" routerLink="foyer">
+                    <i class="mdi mdi-domain"></i>
+                    <span class="nav-text">Foyer</span>
+                  </a>
+                </li>
+
+
+
+
+
+                <li
+                 >
+                  <a class="sidenav-item-link" routerLink="bloc">
+                    <i class="mdi mdi-city-variant"></i>
+                    <span class="nav-text">Bloc</span>
+                  </a>
+                </li>
+
+
+
+
+
+                <li
+                 >
+                  <a class="sidenav-item-link" routerLink="chambre">
+                    <i class="mdi mdi-exit-run"></i>
+                    <span class="nav-text">Chambre</span>
+                  </a>
+                </li>
+
+
+
+                <li
+                 >
+                  <a class="sidenav-item-link" routerLink="reservation">
+                    <i class="mdi mdi-calendar-check"></i>
+                    <span class="nav-text">Réservation</span>
+                  </a>
+                </li>
+
+                <li
+                 >
+                  <a class="sidenav-item-link" href="calendar.html">
+                    <i class="mdi mdi-account"></i>
+                    <span class="nav-text">Etudiant</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+
+            </ul>
+
+          </div>
+
+          <div class="sidebar-footer">
+            <div class="sidebar-footer-content">
+              <ul class="d-flex">
+                <li>
+                  <a href="user-account-settings.html" data-toggle="tooltip" title="Profile settings"><i class="mdi mdi-settings"></i></a></li>
+                <li>
+                  <a href="#" data-toggle="tooltip" title="No chat messages"><i class="mdi mdi-chat-processing"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+
+    <!-- ====================================
+    ——— PAGE WRAPPER
+    ===================================== -->
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <!-- main here -->
+
+        <router-outlet></router-outlet>
+    </div>
+
+
+  </div>
+
+
+
+<footer class="footer mt-auto">
+  <div class="copyright bg-white">
+    <p>
+      &copy; <span id="copy-year"></span> Copyright Mono Dashboard Bootstrap Template by <a class="text-primary" href="#" target="_blank" >CyberMaster</a>.
+    </p>
+  </div>
+  <script>
+    var d = new Date();
+    var year = d.getFullYear();
+    document.getElementById("copy-year").innerHTML = year;
+  </script>
+</footer>
+
+
+
+
+

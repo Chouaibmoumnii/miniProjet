@@ -1,0 +1,84 @@
+<div fxFlex="3.5rem" fxLayoutAlign="start center">
+  <span class="smr-caption--lg">
+    <h1><b><u style="padding-left: 250px;color:#6c43a1;">Modifier planification</u></b></h1>
+  </span>
+</div>
+
+<div fxFlex="auto" fxFlexAlign="start" fxFill>
+  <br>
+  <br>
+  <form #form="ngForm">
+    <div fxLayout="row" fxLayoutAlign="center center" fxFill>
+      <div fxFlex="70" fxFlex.xs="100">
+        <mat-form-field color="accent">
+          <input matInput
+                 name="nomEvent"
+                 aria-label="object"
+                 class="form-control rounded-0"
+                 pattern="[a-zA-Z]*"
+                 minlength="3"
+                 required
+                 type="text"
+                 [(ngModel)]="editePlanification.nomEvent"
+                 placeholder="Entrer le nomEvent"
+                 #nomUniversite="ngModel"
+          >
+
+        </mat-form-field>
+        <mat-form-field color="accent">
+          <input matInput
+                 name="localisation"
+                 aria-label="localisation"
+                 class="form-control rounded-0"
+                 pattern="[a-zA-Z0-9]*"
+                 minlength="3"
+                 required
+                 type="text"
+                 [(ngModel)]="editePlanification.localisation"
+                 placeholder="localisation"
+                 #adresse="ngModel"
+          >
+
+        </mat-form-field>
+        <mat-form-field color="accent">
+          <input matInput
+                 name="tarif"
+                 aria-label="tarif"
+                 class="form-control rounded-0"
+                 pattern="[a-zA-Z0-9]*"
+                 minlength="3"
+                 required
+                 type="text"
+                 [(ngModel)]="editePlanification.tarif"
+                 placeholder="tarif"
+                 #adresse="ngModel"
+          >
+
+        </mat-form-field>
+        <mat-form-field color="accent">
+          <input matInput
+                 name="dateEvent"
+                 aria-label="localisation"
+                 class="form-control rounded-0"
+                 pattern="[a-zA-Z0-9]*"
+                 minlength="3"
+                 required
+                 type="text"
+                 [(ngModel)]="editePlanification.dateEvent"
+                 placeholder="dateEvent"
+                 #adresse="ngModel"
+          >
+
+        </mat-form-field>
+        <div style="padding-left: 25%">
+          <button class="custom-btn btn-8" mat-button (click)="onNoClick()">
+            <span><b>Annuler</b></span>
+          </button>
+          <button class="custom-btn btn-8" mat-stroked-button color="accent" type="button" (click)="saveChanges()">
+            <span><b>Enregistrer</b></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
